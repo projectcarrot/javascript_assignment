@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+        input[type="password"] { 
+            display: block;
+            margin-bottom: 10px;
+        }
+        .class1 {
+            color: cyan;
+        }   
+        .class2 {
+            color: brown;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        </style>
+        </head>
+        <body>
+            <input id="username" name="username" value="athiphat" type="text" class="class1"/>
+            <input id="password" name="password" value="athiphat123" type="password" class="class2"/>
+            <input id="desc" name="desc" value="desc" type="type" class="class2"/>
+            <input id="status-active" name="status" type="radio" value="active" checked/><label for="status-active">Active</label><br/>
+            <input id="status-inactive" name="status" type="radio" value="inactive"/><label for="status-inactive">Inactive</label>
+            <!-- <input id="desc" name="desc" value="desc" type="text" class="class2"/> -->
+            <br/>
+            <button onclick="onClick()">Click...</button>
+            <script> 
+            const e1 = document.getElementById("username");
+            console.log("e1:", e1);
+            console.log("e1 value: ", e1.value);
+            const e2 = document.getElementsByTagName("input");
+            console.log("e2:", e2);
+            console.log("e2[0] value: ", e2[0].value);
+            console.log("e2[2] value: ", e2[2].value);
+            const e3 = document.getElementsByClassName("class2");
+            e2[2].value = "test...";
+            console.log("e3:", e3);
+
+            function onClick() {
+                console.log("Click...");
+                //console.log("event: ", event);
+            }
+            
+            //function 
+            </script>
+        </body>
+    </html> 
+
+ 
